@@ -12,11 +12,7 @@ public class FormatString {
 		String[] messageArr = stripPunct(message).toUpperCase().split("(?!^)");
 		
 		for (int i = 0; i < messageArr.length; i++) {
-			if (messageArr[i].matches("-?\\d+(\\.\\d+)?")) {
-				stringArray += translateNumber(messageArr[i]);
-				stringArray += ",";
-			}
-			else if (messageArr[i].equals(" ")) {
+			if (messageArr[i].equals(" ")) {
 				stringArray += "space,";
 			}
 			else {
@@ -29,41 +25,5 @@ public class FormatString {
 	
 	private static String stripPunct(String message) {
 		return message.replaceAll("\\p{P}", "");
-	}
-	
-	private static String translateNumber(String message) {
-		if (message.equals("0")) {
-			return "zero";
-		}
-		else if (message.equals("1")) {
-			return "one";
-		}
-		else if (message.equals("2")) {
-			return "two";
-		}
-		else if (message.equals("3")) {
-			return "three";
-		}
-		else if (message.equals("4")) {
-			return "four";
-		}
-		else if (message.equals("5")) {
-			return "five";
-		}
-		else if (message.equals("6")) {
-			return "six";
-		}
-		else if (message.equals("7")) {
-			return "seven";
-		}
-		else if (message.equals("8")) {
-			return "eight";
-		}
-		else if (message.equals("9")) {
-			return "nine";
-		}
-		else {
-			return "";
-		}
 	}
 }
