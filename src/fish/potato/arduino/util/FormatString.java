@@ -14,6 +14,7 @@ public class FormatString {
 		for (int i = 0; i < messageArr.length; i++) {
 			if (messageArr[i].matches("-?\\d+(\\.\\d+)?")) {
 				stringArray += translateNumber(messageArr[i]);
+				stringArray += ",";
 			}
 			else if (messageArr[i].equals(" ")) {
 				stringArray += "space,";

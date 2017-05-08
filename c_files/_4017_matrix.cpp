@@ -11,10 +11,11 @@ void scrollChar(byte pattern1[], byte pattern2[]);
 void doReset();
 void doClock();
 #line 5
-int clock = 8;
-int reset = 9;
 
-int countPins = 10;
+//clock pin
+int clock = 8;
+//resent pin
+int reset = 9;
 //number of cycles to delay on each character
 int charDelay = 80;
 //blank time following each character (milliseconds)
@@ -52,7 +53,7 @@ void loop() {
 
 void showChar(byte charPattern[]) {
   for (int j = 0; j < charDelay; j++) {
-    for (int i = 0; i < countPins; i++) {
+    for (int i = 0; i < 10; i++) {
       if (i >= 8) {
         doClock();
       }
@@ -70,7 +71,7 @@ void showChar(byte charPattern[]) {
 void scrollChar(byte pattern1[], byte pattern2[]) {
   for (int m = 0; m < 8; m++) {
     for (int j = 0; j < charDelay / 8; j++) {
-      for (int i = 0; i < countPins; i++) {
+      for (int i = 0; i < 10; i++) {
         if (i >= 8) {
           doClock();
         }
