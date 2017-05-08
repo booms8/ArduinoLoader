@@ -5,4 +5,6 @@
 *.hex
 *.o
 *~
-/c_files/build
+c_files/build
+c_files/message.c
+src/fish/potato/arduino/Runner.java
