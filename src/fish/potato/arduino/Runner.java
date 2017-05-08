@@ -7,6 +7,6 @@ import fish.potato.arduino.ArduinoLoader;
 public class Runner {
 
 	public static void main(String[] args) throws IOException, InterruptedException {
-		ArduinoLoader.reprogram("yoga time", 1);
+		ArduinoLoader.reprogram("hello world", 1);
 	}
 }

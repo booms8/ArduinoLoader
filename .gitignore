@@ -5,3 +5,4 @@
 *.hex
 *.o
 *~
+/c_files/build

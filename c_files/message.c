@@ -1,4 +1,4 @@
 #include "chars.h"
 
 static int mode = 1;
-static byte pattern[10][8] = {_Y,_O,_G,_A,space,_T,_I,_M,_E,space};
+static byte pattern[12][8] = {_H,_E,_L,_L,_O,space,_W,_O,_R,_L,_D,space};
