@@ -17,9 +17,10 @@ int clock = 8;
 //resent pin
 int reset = 9;
 //number of cycles to delay on each character
+//should be evenly divisible by 8 for scroll mode
 int charDelay = 80;
-//blank time following each character (milliseconds)
-int charBuffer = 50;
+//blank time following each character (milliseconds) in flash mode
+int charBuffer = 25;
 //delay for each row (microseconds);
 int cycle = 1000;
 
