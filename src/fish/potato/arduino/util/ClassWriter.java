@@ -8,10 +8,10 @@ import fish.potato.arduino.Constants;
 
 public class ClassWriter {
 	public static void createClass(String formattedMessage, int mode) {
-		String content = "#include \"chars.h\"\n\n" +
+		String content = "#include \"chars_8.h\"\n\n" +
 				"static int mode = " + mode + ";\n" +
 				formattedMessage;
-		File messageClass = new File(Constants.WORKING_DIR + "message.c");
+		File messageClass = new File(Constants.WORKING_DIR + "message_8.c");
 		
 		try {
 		    FileWriter classWriter = new FileWriter(messageClass, false);

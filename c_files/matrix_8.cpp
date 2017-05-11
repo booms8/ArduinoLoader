@@ -1,16 +1,12 @@
-#line 1 "_4017_matrix.ino"
-#include "message.c"
-
-//0: flash
-//1: scroll
+#include "message_8.c"
 #include "Arduino.h"
+
 void setup();
 void loop();
 void showChar(byte charPattern[]);
 void scrollChar(byte pattern1[], byte pattern2[]);
 void doReset();
 void doClock();
-#line 5
 
 //clock pin
 int clock = 8;
